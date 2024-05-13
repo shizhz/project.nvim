@@ -81,6 +81,7 @@ local function find_project_files(prompt_bufnr)
     cwd = project_path,
     hidden = config.options.show_hidden,
     mode = "insert",
+    path_display = { "truncate" },
   }
   if cd_successful then
     builtin.find_files(opt)
